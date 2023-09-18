@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/game_navigation"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/itemHome">
 
     <fragment
-        android:id="@+id/mainFragment"
+        android:id="@+id/itemHome"
         android:name="com.example.adv160720056week2.MainFragment"
         android:label="main"
         tools:layout="@layout/fragment_main">
@@ -22,11 +22,22 @@
         tools:layout="@layout/fragment_game">
         <action
             android:id="@+id/actionMainFragment"
-            app:destination="@id/mainFragment"
+            app:destination="@id/itemHome"
             app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out" />
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/itemHome" />
         <argument
             android:name="player_name"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/itemHistory"
+        android:name="com.example.adv160720056week2.HistoryFragment"
+        android:label="itemHistory"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/itemProfile"
+        android:name="com.example.adv160720056week2.ProfileFragment"
+        android:label="itemProfile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

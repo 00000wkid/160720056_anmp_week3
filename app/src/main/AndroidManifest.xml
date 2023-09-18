@@ -16,7 +16,7 @@
 <!--            android:name=".QuestionActivity"-->
 <!--            android:exported="false" />-->
         <activity
-            android:name=".QuestionActivity"
+            android:name=".MainActivity"
             android:exported="true">
 <!--        <activity-->
 <!--            android:name=".MainActivity"-->
