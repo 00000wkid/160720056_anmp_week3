@@ -16,8 +16,9 @@
             android:id="@+id/txtNameLayout"
             android:layout_width="409dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="202dp">
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtName"
@@ -35,6 +36,18 @@
             android:text="Button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtNameLayout" />
+
+        <Button
+            android:id="@+id/btnOption"
+            style="@style/Widget.Material3.Button.IconButton.Outlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="27dp"
+            android:text="Button"
+            app:icon="@drawable/baseline_settings_24"
+            app:layout_constraintBottom_toTopOf="@+id/txtNameLayout"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
